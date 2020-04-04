@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def sigma(x):
+    return 1 / (1 + np.exp(-x))
+
+X = np.linspace(-10, 10, 1000)
+
+plt.figure(figsize=(12,8))
+plt.plot(X, sigma(X),'b')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.title('Function')
+plt.grid()
